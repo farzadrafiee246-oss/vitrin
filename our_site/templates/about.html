@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fa" dir="rtl" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>درباره ما</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'DM Sans', sans-serif; 
+      height: 100%;
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .container {
+      max-width: 576px;
+      width: 100%;
+      background: white;
+      color: #1e293b;
+      padding: 32px;
+      border-radius: 28px;
+      box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0;
+    }
+    .box {
+      background: #f1f5f9;
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .box p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+    .box p:last-child {
+      margin-bottom: 0;
+    }
+    .phone-item {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 40px;
+      padding: 14px 20px;
+      margin-bottom: 12px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: #1e293b;
+      transition: all 0.3s;
+      cursor: pointer;
+      direction: ltr;
+      text-decoration: none;
+      display: block;
+    }
+    .phone-item:hover {
+      background: #3b82f6;
+      color: white;
+      border-color: #3b82f6;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(59,130,246,0.3);
+    }
+    .phone-item:last-child {
+      margin-bottom: 0;
+    }
+    .phone-section {
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 32px;
+      border-radius: 40px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      transition: all 0.3s;
+      margin-bottom: 12px;
+    }
+    .btn:last-child {
+      margin-bottom: 0;
+    }
+    .btn-primary {
+      background: #3b82f6;
+      color: white;
+      box-shadow: 0 8px 20px rgba(59,130,246,0.3);
+    }
+    .btn-primary:hover {
+      background: #2563eb;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(59,130,246,0.4);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #3b82f6;
+      border: 2px solid #3b82f6;
+    }
+    .btn-outline:hover {
+      background: #3b82f6;
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(59,130,246,0.3);
+    }
+    .btn-section {
+      margin-top: 16px;
+    }
+    .flex-row {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    @media (min-width: 640px) {
+      .flex-row {
+        flex-direction: row;
+      }
+      .flex-row .btn,
+      .flex-row .phone-item {
+        flex: 1;
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>درباره ما</h1>
+    </div>
+
+    <!-- Description Box -->
+    <div class="box">
+      <p>ما دو تا از دانشجو های دانشگاه تهران هستیم
+      که تصمیم گرفتیم با توجه 
+      به دانشی که در حوزه برنامه نویسی و آی تی داریم
+      وب سایتی رو راه اندازی کنیم و 
+     خدماتی رو به شما عزیزان ارائه بدیم.</p>
+    </div>
+
+    <!-- Phone Numbers -->
+    <div class="phone-section flex-row">
+      <a href="tel:09001362720" class="phone-item">09001362720</a>
+      <a href="tel:09309478895" class="phone-item">09309478895</a>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-section flex-row">
+      <a href="https://www.a.com" target="_blank" class="btn btn-prim
+
+ary">Farzad Rafiee</a>
+      <a href="https://www.a.com" target="_blank" class="btn btn-outline">Matin Babaee</a>
+    </div>
+
+  </div>
+</body>
+</html>
